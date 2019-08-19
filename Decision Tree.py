@@ -1,12 +1,3 @@
-
-# My classifier is a decision tree with post-pruning to reducing over-fitting.
-# The decision tree is built recursively, selecting the attribute that minimises average gini score.
-# The data is split 80/20, with 80% used to build the tree, and the remaining data is held back to implement post-pruning.
-# Post-pruning is implemented by iteratively pruning nodes at the bottom of the tree whenever pruning improves accuracy on the 20%.
-# No external machine learning libraries (e.g. SKLearn) have been used.
-# My code includes tree learning, tree pruning, prediction and train/test splitting
-
-
 from __future__ import division
 from pacman import Directions
 from game import Agent
@@ -21,6 +12,13 @@ import math
 import numpy as np
 from uuid import uuid4
 import copy
+
+# My classifier is a decision tree with post-pruning to reducing over-fitting.
+# The decision tree is built recursively, selecting the attribute that minimises average gini score.
+# The data is split 80/20, with 80% used to build the tree, and the remaining data is held back to implement post-pruning.
+# Post-pruning is implemented by iteratively pruning nodes at the bottom of the tree whenever pruning improves accuracy on the 20%.
+# No external machine learning libraries (e.g. SKLearn) have been used.
+# My code includes tree learning, tree pruning, prediction and train/test splitting
 
 def getMinValueOfDictionary(d):
     # Utility function: given a dictionary it will return a list of the keys associated with the min value.
