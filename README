@@ -1,0 +1,18 @@
+This repository contains four files, each of which consists of a single coursework submission for my MSc in Data Science covering modules in Artificial Intelligence and Machine Learning.
+
+Each file contains python code for an agent which can play Pacman within the Berkeley AI Pacman game.
+http://ai.berkeley.edu/home.html
+
+To use these files, you will need to download the Pacman game from the above URL, save these files in the same directory and launch the game.
+
+searchAlgorithmAgents.py
+- This file contains an agent who uses a pathfinding algorithm (BFS) to find food whilst avoiding ghosts that come within a defined perimeter of the agenbt
+
+mdpAgents.py
+- This file contains an agent who uses a markov decision process to select an action
+
+decisionTree.py
+- This file contains an implentation from scratch of a decision tree with pruning. The decision tree is used to classify moves within the game based on data from previous games.
+
+QLearningAgents.py
+- This file contains an implementation of a pacman that agent that uses reinforcement learning (q learning)
